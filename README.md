@@ -1,70 +1,83 @@
-# Getting Started with Create React App
+# Tasklist Management 
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Tasklist management application helps to manage your personal and professional productivity. You can use it to manage your tasks from a smartphone, tablet, or computer.
 
-## Available Scripts
+## Installation
 
-In the project directory, you can run:
+Go to the directory where you want to clone this project. Then run the following command for cloning this project
+```bash
+git clone https://github.com/NaberaHarsh/tasklistManagement.git
+```
+Once cloned successfully, open the project in visual studio code or any other code editor and install all the dependencies by using npm or yarn. Run command
+```
+npm install
+or
+yarn install
+```
+After successfull installation, run the project. Run command
+```
+npm start
+or
+yarn start
+```
+The project will start running on [http://localhost:3000](http://localhost:3000/) in your browser
 
-### `yarn start`
+## Routes
+This project has one public route i.e., the login page and all other private routes, means to access any othe page you need to login first.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Features
+## Login
+This is the public route and first page that opens when you start the application. ![login](https://github.com/NaberaHarsh/tasklistManagement/blob/master/public/assets/images/login.png)
+Here we have username and password field.
+1. Username Field - This field accepts only alphabets.
+2. Password Field - This field accepts only alphanumeric values and allowed length is 8.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## Dashboard
+![Dashboard](https://github.com/NaberaHarsh/tasklistManagement/blob/master/public/assets/images/dashboard.png)
+<li> After successfull login you will be directed to Dashboard page.
+<li> This page contains the welcome message and some applications and features of this application.
+<li> In navbar logout button is present, upon clicking you will be logged out and data will be cleared.
+  
+## Drawer
+![drawer](https://github.com/NaberaHarsh/tasklistManagement/blob/master/public/assets/images/drawer.png)
+In navbar on clicking on the menu icon drawer will open in left side, it contains list all the pages present in the application.
 
-### `yarn test`
+## Creation 
+You can make the list of the tasks using this form 
+![Form Image](https://github.com/NaberaHarsh/tasklistManagement/blob/master/public/assets/images/createtask.png)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+In the form we have some fields and all are mandatory fields, respective error is shown if any entry is missing or not in proper format.
+1. Task Name  - This field accepts the name of the task. It can contain alphabets, numbers and special characters as well.
+2. Description - This Field allows you enter the description of the task. Multiple lines are accepted here.
+3. Date and Time -  This field helps you to select start date & time and End date & time.
+4. Action - Submit button lets you to submit the details but only after validation. Once submitted the form is cleared.
 
-### `yarn build`
+## List Data
+All the records submitted can be viewed inside the view tasks section ![Table Image](https://github.com/NaberaHarsh/tasklistManagement/blob/master/public/assets/images/table.png)
+From here we can filter the data according to date, sort and search according to taskname, edit the data as well as delete the data.
+<li> For sorting click on taskname header in table it will sort ascending and descending order on each click.
+<li> For searching we have a search field in tabel for taskname, you can search taskname from here.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Edit
+On clicking the pencil icon in the table the particular record entries will be available in the form, from here we can edit all the values and can update the record.
+![Edit Image](https://github.com/NaberaHarsh/tasklistManagement/blob/master/public/assets/images/edittask.png)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Delete
+On Clicking the trash icon in the table, an alert will pop asking for the condfirmation for deleting the particular record.
+![Delete Image](https://github.com/NaberaHarsh/tasklistManagement/blob/master/public/assets/images/delete.png)
+  
+## Jokes
+![jokes](https://github.com/NaberaHarsh/tasklistManagement/blob/master/public/assets/images/jokes.png)
+This section contains the list of jokes  
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Applications
+<li> This is a simple to use tasklist management application that can
+            help you plan,list and get more tasks done.
+<li>You can create unlimited tasks, set status, give completion dates.
+<li>You can Create tasks for yourself and for others.
+<li>You can keep record of your employees daily tasks as well.
+<li>One of the most important reasons for keeping a tasklist management is the organization.
+ <li>Organizing your tasks with a list can make everything much more manageable and make you feel grounded.
+<li>Seeing a clear outline of all your tasks will help you feel organized and stay mentally focused.
 
-### `yarn eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
