@@ -1,0 +1,17 @@
+.container {
+  margin-top: 20px;
+  text-align: center;
+}
+.header {
+  padding: 32px;
+}
+.inputs {
+  padding: 16px;
+}
+.btn {
+  width: -webkit-fill-available;
+}
+.error {
+  color: red;
+  text-align: left;
+}
