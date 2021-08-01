@@ -148,6 +148,7 @@ const ViewTask: React.FC<IProps> = ({ taskData, handleDelete, handleEdit }) => {
           {props.value}
         </div>
       ),
+      sortable: false,
     },
     {
       accesssor: "startTime",
@@ -170,6 +171,7 @@ const ViewTask: React.FC<IProps> = ({ taskData, handleDelete, handleEdit }) => {
           return <div className="listingAlign">Running</div>;
         }
       },
+      sortable: false,
     },
     {
       accessor: "taskId",
@@ -201,6 +203,7 @@ const ViewTask: React.FC<IProps> = ({ taskData, handleDelete, handleEdit }) => {
           </Grid>
         );
       },
+      sortable: false,
     },
   ];
 

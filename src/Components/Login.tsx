@@ -69,12 +69,12 @@ const Login: React.FC<IProps> = ({
     userNameError = "Username not in valid format. Only alphabets are allowed";
   }
 
-  if (password.match(/^[a-zA-Z0-9]{0,8}$/)) {
+  if (password.match(/^[a-zA-Z0-9]{8}$/)) {
     passwordError = "";
   } else {
     passwordError =
-      password.length > 8
-        ? "Password length should not be greater than 8"
+      password.length !== 8
+        ? "Password must be 8 character long"
         : "Password not in valid format. Only alphabets and numbers are allowed";
   }
 
