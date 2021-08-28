@@ -49,7 +49,7 @@ const CreateTask: FunctionComponent<IProps> = ({
     return () => {
       handleReset();
     };
-  }, []);
+  });
 
   let startDateError: string = "";
   let endDateError: string = "";
