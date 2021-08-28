@@ -105,7 +105,7 @@ const Routes: React.FC<IProps> = ({
       setMessage("Logout Successfully !");
       setType("warning");
       handleReset();
-      window.location.reload(false);
+      window.location.reload();
     }, 1000);
   };
 
